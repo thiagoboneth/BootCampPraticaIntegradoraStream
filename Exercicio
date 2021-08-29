@@ -1,0 +1,37 @@
+Exercício 1
+
+Comece criando uma classe Vehicle com o modelo, marca e atributos de custo, em seguida,
+crie uma classe Garagem com o id ou atributos de identificador exclusivo e uma lista de
+veículos. Ele também cria os construtores para as classes e métodos Setter e Getter.
+
+Exercício 2
+Faça uma classe Main com o método main para representar um cenário onde a classe
+garagem é instanciada com uma lista de veículos de acordo com a tabela.
+
+Marca Modelo Preço
+ford Fiesta 1000
+ford Focus 1200
+ford Explorer 2500
+Fiat Uno 500
+Fiat Cronos 1000
+Fiat Torino 1250
+Chevrolet Aveo 1250
+Chevrolet Spin 2500
+Toyota Corola 1200
+Toyota Fortuner 3000
+Renault Logan 950
+
+2
+
+Exercício 3
+Usando o método de ordenação na lista de Veículos com expressões lambda, obtenha uma
+lista de veículos ordenados por preço do menor ao maior, imprima o resultado na tela.
+
+Exercício 4
+
+Da mesma forma, imprima uma lista ordenada por marca e por sua vez por preço.
+
+Exercício 5
+Pretende-se extrair uma lista de veículos com preço não superior a 1000, depois outra com
+preços igual ou superior a 1000 e, por fim, obter a média total dos preços de toda a lista de
+veículos.
