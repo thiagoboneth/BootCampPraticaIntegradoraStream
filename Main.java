@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -20,7 +21,8 @@ public class Main {
         veiculos.add(new Veiculo("Logan","Renault",950));
 
         //veiculos.stream().sorted((v,nv)->v.getCusto()>nv.getCusto()?1:-1).forEach(System.out::println); //ordena por custo menor - maior
-        //veiculos.stream().sorted((v,nv)->v.getMarca().compareToIgnoreCase(nv.getMarca())).sorted((v,nv)->v.getCusto()>nv.getCusto()?1:-1).forEach(System.out::println); //ordena por marca maior - menor * nao consegui fazer 100%
+
+        veiculos.stream().sorted(Comparator.comparing(Veiculo::getCusto)).sorted((v,nv)->v.getMarca().compareTo(nv.getMarca())).forEach(System.out::println);//ordena por marca maior - menor,
 
         //veiculos.stream().filter(v->v.getCusto()<=1000).forEach(System.out::println); //ordena custo menor 1000
         //veiculos.stream().filter(v->v.getCusto()>=1000).forEach(System.out::println); //ordena custo maior 1000
